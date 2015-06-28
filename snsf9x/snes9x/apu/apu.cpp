@@ -176,7 +176,7 @@
 
 
 #include <math.h>
-#include "snes9x.h"
+#include "../snes9x.h"
 #include "apu.h"
 #ifdef SNSF9X_REMOVED
 #include "snapshot.h"

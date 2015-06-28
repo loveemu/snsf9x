@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\snes9x">
+      <UniqueIdentifier>{2465b737-1bca-4bc1-8912-8e08afda1938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\snes9x\apu">
+      <UniqueIdentifier>{ae96933d-a291-4c7e-bf82-ae2c8d84f39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\snes9x">
+      <UniqueIdentifier>{1d4dbd4b-b87a-4a47-84fe-53a5b3df2d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\snes9x\apu">
+      <UniqueIdentifier>{25a0864b-c2ac-407a-9cc1-83a82794d3bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="snsf9x\SNESSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\apu.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\blargg_common.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\blargg_config.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\blargg_endian.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\blargg_source.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\hermite_resampler.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\linear_resampler.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\resampler.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\ring_buffer.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\SNES_SPC.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\SPC_CPU.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\SPC_DSP.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\apu\SPC_Filter.h">
+      <Filter>Header Files\snes9x\apu</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\65c816.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\cpuaddr.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\cpuexec.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\cpumacro.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\cpuops.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\dma.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\getset.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\memmap.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\messages.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\pixform.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\port.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\ppu.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\sdd1.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\snes9x.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="snsf9x\SNESSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\apu\SNES_SPC_state.cpp">
+      <Filter>Source Files\snes9x\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\apu\SPC_DSP.cpp">
+      <Filter>Source Files\snes9x\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\apu\SPC_Filter.cpp">
+      <Filter>Source Files\snes9x\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\apu\apu.cpp">
+      <Filter>Source Files\snes9x\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\apu\SNES_SPC.cpp">
+      <Filter>Source Files\snes9x\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\apu\SNES_SPC_misc.cpp">
+      <Filter>Source Files\snes9x\apu</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\cpu.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\cpuexec.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\cpuops.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\dma.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\globals.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\memmap.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\ppu.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\sdd1.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

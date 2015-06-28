@@ -201,7 +201,9 @@
 #define RIGHTSHIFT_int8_IS_SAR
 #define RIGHTSHIFT_int16_IS_SAR
 #define RIGHTSHIFT_int32_IS_SAR
+#ifdef SNSF9X_REMOVED
 #define SNES_JOY_READ_CALLBACKS
+#endif
 #endif
 
 #ifdef __MACOSX__
