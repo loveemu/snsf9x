@@ -19,11 +19,14 @@ public:
 
 	bool Load(const uint8 * rom, uint32 romsize, const uint8 * sram, uint32 sramsize);
 	void SoundInit(SNESSoundOut * output);
+	void SoundReset();
 	void Init();
 	void Reset();
 	void Term();
 
 	void CPULoop();
+
+	uint32 soundSampleRate;
 
 protected:
 	SNESSoundOut * m_output;

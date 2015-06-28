@@ -72,9 +72,10 @@ bool8 S9xOpenSoundDevice(void)
 }
 
 SNESSystem::SNESSystem() :
-	m_output(NULL)
+	m_output(NULL),
+	soundSampleRate(32000)
 {
-	sound_buffer = new uint8[2 * 2 * 48000 / 5];
+	sound_buffer = new uint8[2 * 2 * 96000 / 5];
 }
 
 SNESSystem::~SNESSystem()
@@ -93,11 +94,8 @@ bool SNESSystem::Load(const uint8 * rom, uint32 romsize, const uint8 * sram, uin
 	if (!Memory.LoadROMSNSF(rom, romsize, sram, sramsize))
 		return false;
 
-	//S9xSetPlaybackRate(Settings.SoundPlaybackRate);
+	Settings.SoundPlaybackRate = soundSampleRate;
 	S9xSetSoundMute(FALSE);
-
-	// bad hack for gradius3snsf.rar
-	//Settings.TurboMode = true;
 
 	return true;
 }
@@ -105,6 +103,12 @@ bool SNESSystem::Load(const uint8 * rom, uint32 romsize, const uint8 * sram, uin
 void SNESSystem::SoundInit(SNESSoundOut * output)
 {
 	m_output = output;
+}
+
+void SNESSystem::SoundReset()
+{
+	Settings.SoundPlaybackRate = soundSampleRate;
+	S9xInitSound(10, 0);
 }
 
 void SNESSystem::Init()

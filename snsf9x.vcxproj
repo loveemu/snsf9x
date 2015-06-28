@@ -58,7 +58,7 @@
     <ClCompile Include="snsf9x\SNESSystem.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5F58F9C0-7066-48BC-8D51-CAD4FB12A389}</ProjectGuid>
+    <ProjectGuid>{7A6FD7B4-0C14-46B7-AEE4-D2EB748088E7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>snsf9x</RootNamespace>
   </PropertyGroup>
