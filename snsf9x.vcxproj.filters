@@ -107,6 +107,9 @@
     <ClInclude Include="snsf9x\snes9x\snes9x.h">
       <Filter>Header Files\snes9x</Filter>
     </ClInclude>
+    <ClInclude Include="snsf9x\snes9x\sa1.h">
+      <Filter>Header Files\snes9x</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="snsf9x\SNESSystem.cpp">
@@ -152,6 +155,9 @@
       <Filter>Source Files\snes9x</Filter>
     </ClCompile>
     <ClCompile Include="snsf9x\snes9x\sdd1.cpp">
+      <Filter>Source Files\snes9x</Filter>
+    </ClCompile>
+    <ClCompile Include="snsf9x\snes9x\sa1.cpp">
       <Filter>Source Files\snes9x</Filter>
     </ClCompile>
   </ItemGroup>

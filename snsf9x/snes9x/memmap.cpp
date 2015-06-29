@@ -2430,13 +2430,17 @@ void CMemory::InitROM (void)
 		case 0x2530:
 			Settings.OBC1 = TRUE;
 			break;
+#endif
 
+#ifndef SNSF9X_REMOVED_SA1
 		// SA1
 		case 0x3423:
 		case 0x3523:
 			Settings.SA1 = TRUE;
 			break;
+#endif
 
+#ifdef SNSF9X_REMOVED
 		// SuperFX
 		case 0x1320:
 		case 0x1420:
@@ -3438,9 +3442,11 @@ const char * CMemory::KartContents (void)
 	else
 	if (Settings.OBC1)
 		strcpy(chip, "+OBC1");
+#endif
 	else
 	if (Settings.SA1)
 		strcpy(chip, "+SA-1");
+#ifdef SNSF9X_REMOVED
 	else
 	if (Settings.SPC7110RTC)
 		strcpy(chip, "+SPC7110+RTC");
