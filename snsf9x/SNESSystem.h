@@ -27,10 +27,12 @@ public:
 	void CPULoop();
 
 	uint32 soundSampleRate;
+	uint8 soundEnableFlag;
 
 protected:
 	SNESSoundOut * m_output;
 
 private:
 	uint8 * sound_buffer;
+	uint8 soundEnableFlagOld;
 };

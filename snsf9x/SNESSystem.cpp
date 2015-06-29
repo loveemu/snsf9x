@@ -73,7 +73,9 @@ bool8 S9xOpenSoundDevice(void)
 
 SNESSystem::SNESSystem() :
 	m_output(NULL),
-	soundSampleRate(32000)
+	soundSampleRate(32000),
+	soundEnableFlag(0xff),
+	soundEnableFlagOld(0)
 {
 	sound_buffer = new uint8[2 * 2 * 96000 / 5];
 }
@@ -109,6 +111,9 @@ void SNESSystem::SoundReset()
 {
 	Settings.SoundPlaybackRate = soundSampleRate;
 	S9xInitSound(10, 0);
+
+	soundEnableFlag = 0xff;
+	soundEnableFlagOld = 0;
 }
 
 void SNESSystem::Init()
@@ -128,6 +133,12 @@ void SNESSystem::Term()
 
 void SNESSystem::CPULoop()
 {
+	if (soundEnableFlag != soundEnableFlagOld)
+	{
+		S9xSetSoundControl(soundEnableFlag);
+		soundEnableFlagOld = soundEnableFlag;
+	}
+
 	S9xSyncSound();
 	S9xMainLoop();
 
